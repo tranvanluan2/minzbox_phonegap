@@ -11,25 +11,32 @@ and open the template in the editor.
         <script src="jquery-1.10.2.min.js"></script>
         <script src="jquery.mobile-1.3.2.min.js"></script>
         <script src="app.js"></script>
+         <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="bootstrap.min.js"></script>
     </head>
     <body>
         <!-- Main Page -->
         <div data-role="page" id="main">
             <div data-role="header" data-position="inline">
                
-                <h1> Minzbox Pictures</h1>
+                <h1> Minzbox Pictures abc</h1>
                
 
             </div>
             <div data-role="content">
                 <form action='' onsubmit="return false;" method="get">
                     <h2>Minzbox Log in </h2>
+                    <button class="btn">Hello Luan!</button>
                     <div data-role="fieldcontain">
                         <fieldset data-role="controlgroup">
-                           
                             <input type="text" name="username"
                                    id="username" value="" placeholder="Your username" >
-                           
                             <input type="password" name="password"  id="password"
                                    value="" placeholder="Password">
                              <label for="remember-me">Remember me</label>
@@ -52,25 +59,14 @@ and open the template in the editor.
         <!-- First Page End -->
         <!-- Main Page -->
         <div data-role="page" id="main-page" data-add-back-btn="true">
-            <div class="vote-area">
-                <div class="vote-desc" id="a">
-                    Vote description here!
-                </div>
-                <div class="vote-content">
-                    <span class="image-content">
-                    </span>
-                    Vote content here!
-                </div>
+            <div id="vote-area">
             </div>
         </div>
         <!-- End Main page -->
         <!-- Register page -->
         <div data-role="page" id="register-page" data-add-back-btn="true">
             <div data-role="header" data-position="inline" >
-               
-                <h1> Minzbox Pictures</h1>
-               
-                
+                <h1> Minzbox Pictures</h1>           
             </div>
             <div data-role="content">
                 <form action="" onsubmit="return false;" >
