@@ -4,6 +4,11 @@
  * and open the template in the editor.
  */
 $(function() {
+
+    $("#newVotes").bind("click",function(){
+      
+         $.mobile.changePage("NewVotes.html",{transition:"slideup", changeHash:false}); 
+    });
     $("#login-button").bind("click", function() {
         $(this).attr("disabled","disabled");
         var username = $("#username").val();
