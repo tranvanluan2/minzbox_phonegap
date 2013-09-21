@@ -6,6 +6,7 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JQuery Mobile Demo</title>
         <link href="css/jqueryMobile/jquery.mobile-1.3.2.min.css" rel="stylesheet" type="text/css">
         <script src="css/jqueryMobile/jquery-1.10.2.min.js"></script>
@@ -16,39 +17,63 @@ and open the template in the editor.
 
         <!-- Optional theme -->
         <link rel="stylesheet" href="css/bootstrap/css/bootstrap-theme.min.css">
-
+       
         <!-- Latest compiled and minified JavaScript -->
         <script src="css/bootstrap/js/bootstrap.min.js"></script>
         <script src="js/app.js"></script>
+        
     </head>
     <body>
         <!-- Main Page -->
         <div data-role="page" id="main">
+            
             <div data-role="header" data-position="inline">
                 
                
 
             </div>
-            <div data-role="content">
+            
+            
+            <div data-role="content" class="row">
+                <form role="form" class="col-md-offset-3">
+                    <!--<div class="form-group">-->
+                        <!--<label for="exampleInputEmail1">Email address</label>-->
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="exampleInputPassword1">Password</label>-->
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="exampleInputFile">File input</label>-->
+                        <input type="file" id="exampleInputFile">
+                        <!--<p class="help-block">Example block-level help text here.</p>-->
+                    <!--</div>-->
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Check me out
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
                 <form action='' onsubmit="return false;" method="get">
                     <h2>Minzbox Log in  </h2>
                     <input type="button" id="newVotes" value="click here"/>
-                    <div data-role="fieldcontain">
-                        <fieldset data-role="controlgroup">
-                            <input type="text" name="username"
+                    <div data-role="fieldcontain" class="row">
+                        
+                            <input type="text" class="well-lg col-lg-12" name="username"
                                    id="username" value="" placeholder="Your username" >
+                            <br>
                             <input type="password" name="password"  id="password"
-                                   value="" placeholder="Password">
-                             <label for="remember-me">Remember me</label>
-                            <input type="checkbox" id="remember-me" checked="checked">
-                           
-                            <input type="button" name='login-button' id="login-button"
+                                   value="" placeholder="Password" />
+                            <br>
+                            <input type="button"  name='login-button' id="login-button"
                                    value="Login">
                             <input type="button" name='register-button' id="register-button"
                                    value="Register">
                              <input type="button" name ="show-image" id="show-image" 
                                    value="Show Images">
-                        </fieldset>
+                       
                     </div>     
                 </form>
             </div>
@@ -80,9 +105,9 @@ and open the template in the editor.
                 </form>
                 
             </div>
-             <div data-role="footer" class="ui-bar">
+<!--             <div data-role="footer" class="ui-bar" data-position=fixed>
                 
-            </div>
+            </div>-->
         </div>
         <!-- End register page -->
        

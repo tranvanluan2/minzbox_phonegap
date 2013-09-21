@@ -1,2 +1,2 @@
-/home/tien/workspace/PhoneGap/FirstApp/build/android/bin/AndroidManifest.xml : \
-/home/tien/workspace/PhoneGap/FirstApp/build/android/AndroidManifest.xml \
+/home/tien/minzbox/minzbox_phonegap/FirstApp/build/android/bin/AndroidManifest.xml : \
+/home/tien/minzbox/minzbox_phonegap/FirstApp/build/android/AndroidManifest.xml \

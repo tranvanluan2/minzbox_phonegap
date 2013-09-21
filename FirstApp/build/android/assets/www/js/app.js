@@ -39,19 +39,8 @@ $(function() {
         var fullname = $("#fullname_register").val();
     });
     $("#show-image").bind("click", function(){
-//        $.mobile.changePage("#register-page");
-        $.post('http://ideamining.zapto.org:8080/firstapp/getImage.php',
-        {}).done(function(data){
-            var result = jQuery.parseJSON(data);
-            
-            var id = result['id'];
-            var link = result['link'];
-            var pubdate = result['pubdate'];
-            $("#main-page").append(
-                "<div class='imageBox' id='"+id+"'><span class='imageContent'><img class='image' src='"+link+"'/></span></div>"
-            );
-        });
-        $.mobile.changePage("#main-page"); 
+        
+        $.mobile.changePage("Login.html"); 
         
     });
 });
